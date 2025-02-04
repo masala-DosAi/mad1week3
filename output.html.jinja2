@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tiltle>
+            Student Data
+        </title>
+    </head>
+    <body>
+        <h1>{{header}}</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>{{headd[0]}}</th>
+                    <th>{{headd[1]}}</th>
+                    <th>{{headd[2]}}</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for x in data %}
+                <tr>
+                    <td>{{x[0]}}</td>
+                    <td>{{x[1]}}</td>
+                    <td>{{x[2]}}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                     <td colspan="2">Total marks</td>
+                     <td>{{total_marks}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+</html>
